@@ -13,7 +13,7 @@ import java.io.IOException;
 @RootnetAddon(name = "WaifuESP", author = "Tybie", version = "1.2.0")
 public final class WaifuEspAddon extends Addon {
 
-    static final String WAIFU_URL = "https://imgur.com/7lSYRHE";
+    static final String WAIFU_URL = "https://imgur.com/7lSYRHE.png";
 
     /**
      * Will be called by the addon loader
