@@ -26,5 +26,5 @@ jobs:
     - name: Upload built file
       uses: actions/upload-artifact@v2
       with:
-        name: FrogESPAddon
-        path: ./build/libs/rootnet-frog-esp-*[!sources].jar
+        name: WaifuESPAddon
+        path: ./build/libs/rootnet-waifu-esp-*[!sources].jar
