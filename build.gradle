@@ -1,0 +1,64 @@
+group 'localhost.tybie.waifuesp'
+version project.version
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url = 'https://files.minecraftforge.net/maven'
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+    options.encoding = 'UTF-8'
+}
+
+minecraft {
+    version = '1.12.2-14.23.5.2847'
+    mappings = 'stable_39'
+    makeObfSourceJar = false
+
+    replace "#VERSION#", project.version
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile name: 'rootnet-api'
+}
+
+reobf {
+    jar {
+        setMappingType(net.minecraftforge.gradle.user.ReobfMappingType.NOTCH)
+    }
+}
+
+task copyJar(type: Copy) {
+    def addonsFolder = "${System.properties['user.home']}${File.separator}rootNET${File.separator}addons"
+
+    if (!(new File(addonsFolder).exists())) {
+        return
+    }
+
+    delete fileTree(addonsFolder) {
+        include 'rootnet-waifu-esp-*.jar'
+    }
+
+    from "$buildDir${File.separator}libs${File.separator}rootnet-waifu-esp-${version}.jar"
+    into addonsFolder
+}
+
+build.finalizedBy(copyJar)
