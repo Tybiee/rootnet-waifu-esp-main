@@ -9,7 +9,7 @@ WaifuESP puts cute anime girl overlays on players in your game.
 # Credits
  - All of the code here is from https://github.com/DifferentPerson/rootnet-frog-esp I just edited links and shit uwu
  - Thanks to iZac#2346 from [rootNET](https://rootnet.dev/) for providing the Addon API.
- - Thanks to Stronkfish#6996 for the idea (he begged for it)
+ - Thanks to Stronkfish#6996 for opposing the idea (he was 100% against it)
  - Thanks to Bear_03#2935 for awesome custom waifu folder integration
  - I don't know who took the original image, or edited it, so uwu
  - Praise be to the anime women
