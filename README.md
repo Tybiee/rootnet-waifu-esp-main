@@ -11,6 +11,7 @@ WaifuESP puts cute anime girl overlays on players in your game.
  - Thanks to iZac#2346 from [rootNET](https://rootnet.dev/) for providing the Addon API.
  - Thanks to Stronkfish#6996 for opposing the idea (he was 100% against it)
  - Thanks to Bear_03#2935 for awesome custom waifu folder integration
+ - Thanks to sakamileo (Tumblr) for making the artwork
  - I don't know who took the original image, or edited it, so uwu
  - Praise be to the anime women
  
